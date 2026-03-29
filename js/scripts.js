@@ -291,13 +291,11 @@ function initLambert() {
         map: {
             options: {
                 zoom: 15,
-                zoomControl: true,
-                mapTypeControl: true,
-                scaleControl: true,
+                disableDefaultUI: true,   // 👈 KEY LINE
+                zoomControl: true,   
+                mapTypeControl: true,    // keep zoom buttons
                 scrollwheel: false,
-                streetViewControl: true,
-                draggable: true,
-                
+                draggable: true
             }
         }
     });
